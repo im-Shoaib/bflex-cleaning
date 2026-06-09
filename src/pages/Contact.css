@@ -1,0 +1,369 @@
+.sec1-section {
+  padding: 40px 20px 80px 20px;
+  background-color: #f7f8f9;
+}
+
+.sec1-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sec1-header {
+  margin-bottom: 40px;
+}
+
+.sec1-breadcrumb {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 24px;
+}
+
+.sec1-breadcrumb a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.sec1-breadcrumb a:hover {
+  color: #1F78D6;
+}
+
+.sec1-breadcrumb span {
+  color: #111111;
+  font-weight: 500;
+}
+
+.sec1-subtitle {
+  color: #3C9BFF;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.sec1-title {
+  color: #111111;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.sec1-content-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.sec1-info-card {
+  flex: 1;
+  background-color: #DCEEFE;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec1-info-title {
+  font-size: 24px;
+  color: #111111;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.sec1-info-desc {
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.sec1-info-block {
+  margin-bottom: 24px;
+}
+
+.sec1-info-label {
+  font-size: 18px;
+  color: #111111;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.sec1-info-text {
+  font-size: 15px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+.sec1-info-text a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.sec1-info-text a:hover {
+  color: #1F78D6;
+}
+
+.sec1-form-card {
+  flex: 1.5;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.sec1-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.sec1-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec1-full-width {
+  margin-bottom: 30px;
+}
+
+.sec1-label {
+  font-size: 14px;
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.sec1-input,
+.sec1-select,
+.sec1-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sec1-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+.sec1-input:focus,
+.sec1-select:focus,
+.sec1-textarea:focus {
+  border-color: #3C9BFF;
+  box-shadow: 0 0 0 3px rgba(60, 155, 255, 0.1);
+}
+
+.sec1-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.sec1-submit-wrapper {
+  text-align: center;
+}
+
+.sec1-submit-btn {
+  background-color: #1F78D6;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sec1-submit-btn:hover {
+  background-color: #155ba6;
+  transform: translateY(-2px);
+}
+
+.sec2-section {
+  padding: 80px 20px;
+  background-color: #F7F8F9;
+}
+
+.sec2-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sec2-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sec2-badge {
+  display: inline-block;
+  background-color: #E2F0FF;
+  color: #3C9BFF;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 20px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sec2-title {
+  font-size: 32px;
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.sec2-subtitle {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 400;
+}
+
+.sec2-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sec2-faq-item {
+  background-color: #EAEAEA;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.sec2-faq-item.sec2-active {
+  background-color: #DCEEFE;
+}
+
+.sec2-faq-btn {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sec2-question-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.sec2-icon {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.sec2-icon::before,
+.sec2-icon::after {
+  content: '';
+  position: absolute;
+  background-color: #3C9BFF;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.sec2-icon::before {
+  top: 6px;
+  left: 0;
+  width: 8px;
+  height: 1.5px;
+  transform: rotate(45deg);
+}
+
+.sec2-icon::after {
+  top: 6px;
+  right: 0;
+  width: 8px;
+  height: 1.5px;
+  transform: rotate(-45deg);
+}
+
+.sec2-active .sec2-icon::before {
+  transform: rotate(0deg);
+  width: 14px;
+  left: 0;
+  top: 6px;
+}
+
+.sec2-active .sec2-icon::after {
+  transform: rotate(0deg);
+  width: 14px;
+  right: 0;
+  top: 6px;
+  opacity: 0;
+}
+
+.sec2-faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.sec2-answer-text {
+  padding: 0 24px 24px 24px;
+  margin: 0;
+  color: #666666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .sec1-content-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .sec1-section {
+    padding: 30px 20px 60px 20px;
+  }
+  .sec1-title {
+    font-size: 28px;
+  }
+  .sec1-info-card,
+  .sec1-form-card {
+    padding: 30px 20px;
+  }
+  .sec1-form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .sec1-submit-btn {
+    max-width: 100%;
+  }
+  .sec2-section {
+    padding: 60px 20px;
+  }
+  .sec2-title {
+    font-size: 28px;
+  }
+  .sec2-faq-btn {
+    padding: 20px;
+  }
+  .sec2-answer-text {
+    padding: 0 20px 20px 20px;
+  }
+}

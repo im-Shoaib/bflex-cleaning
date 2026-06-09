@@ -1,0 +1,497 @@
+.hero-section {
+  position: relative;
+  min-height: 120vh;
+  background-image: url('/assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: #00000073;
+  z-index: 1;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 140px;
+}
+
+.hero-content h1 {
+  color: #FFFFFF;
+  font-size: 68px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero-content h1 span {
+  color: #46B4FF;
+}
+
+.hero-content p {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  padding: 14px 32px;
+  width: fit-content;
+}
+
+.sec2-wrapper {
+  background-color: #f7f8f9;
+  padding: 80px 40px;
+}
+
+.sec2-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sec2-partners {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.sec2-partners-title {
+  color: #3C9BFF;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.sec2-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.sec2-logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.sec2-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.sec2-subtitle {
+  background: linear-gradient(0deg, #1C5693, #1C5693);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.sec2-title {
+  color: #3C9BFF;
+  font-size: 42px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+.sec2-link {
+  color: #3C9BFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.sec2-link:hover {
+  opacity: 0.7;
+}
+
+.sec2-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.sec2-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.sec2-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.sec2-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.75) 100%);
+}
+
+.sec2-card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.sec2-card-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sec2-card-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.sec2-card:hover .sec2-card-bg {
+  transform: scale(1.08);
+}
+
+.sec2-card:hover .sec2-card-icon {
+  background-color: #ffffff;
+  color: #3C9BFF;
+}
+
+.sec3-section {
+  padding: 80px 20px;
+  background: linear-gradient(0deg, #C9E9FF, #C9E9FF);
+}
+
+.sec3-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sec3-header {
+  margin-bottom: 30px;
+}
+
+.sec3-subtitle {
+  color: #1C5693;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.sec3-title {
+  color: #3C9BFF;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.sec3-tabs {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sec3-tab {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #888888;
+  padding-bottom: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: color 0.3s ease;
+}
+
+.sec3-tab:hover {
+  color: #111111;
+}
+
+.sec3-tab-active {
+  color: #111111;
+  border-bottom: 3px solid #3C9BFF;
+}
+
+.sec3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.sec3-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sec3-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.sec3-card-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.sec3-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sec3-card:hover .sec3-card-img {
+  transform: scale(1.05);
+}
+
+.sec3-card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.sec3-card-category {
+  color: #3C9BFF;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.sec3-card-title {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.sec3-card-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3C9BFF;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sec3-card-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sec4-section {
+  padding: 80px 20px;
+  background-color: #f7f8f9;
+}
+
+.sec4-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sec4-banner {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.sec4-bg-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.sec4-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.sec4-content {
+  position: relative;
+  z-index: 3;
+  padding: 60px;
+  max-width: 600px;
+}
+
+.sec4-title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.sec4-text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.sec4-btn {
+  background-color: #1F78D6;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sec4-btn:hover {
+  background-color: #155ba6;
+  transform: translateY(-2px);
+}
+
+/* Homepage responsive */
+@media (max-width: 1024px) {
+  .sec2-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sec3-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 20px;
+  }
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .sec2-wrapper {
+    padding: 60px 20px;
+  }
+  .sec2-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .sec2-title {
+    font-size: 32px;
+  }
+  .sec2-partners-title {
+    font-size: 28px;
+  }
+  .sec2-logos {
+    gap: 20px;
+  }
+  .sec2-logo {
+    height: 30px;
+  }
+  .sec3-section {
+    padding: 60px 20px;
+  }
+  .sec3-title {
+    font-size: 32px;
+  }
+  .sec3-tabs {
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+  }
+  .sec3-tab {
+    font-size: 18px;
+  }
+  .sec3-grid {
+    grid-template-columns: 1fr;
+  }
+  .sec4-section {
+    padding: 60px 20px;
+  }
+  .sec4-banner {
+    min-height: 400px;
+  }
+  .sec4-content {
+    padding: 40px 30px;
+  }
+  .sec4-title {
+    font-size: 36px;
+  }
+  .sec4-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .sec2-cards {
+    grid-template-columns: 1fr;
+  }
+  .sec4-content {
+    padding: 30px 20px;
+  }
+  .sec4-title {
+    font-size: 32px;
+  }
+}
