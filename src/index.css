@@ -5,6 +5,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ----- Header (transparent for homepage) ----- */
 .header-nav {
   position: absolute;

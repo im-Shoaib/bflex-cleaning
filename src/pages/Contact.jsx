@@ -2,7 +2,7 @@ import { useState } from 'react';
 import HeaderDefault from '../components/HeaderDefault';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import './ServiceDetail.css';
+import './Contact.css';
 
 export default function Contact() {
   const [activeFaq, setActiveFaq] = useState(0);
