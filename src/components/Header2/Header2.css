@@ -1,0 +1,128 @@
+/* BFLEX-CLEANING/src/components/Header2/Header2.css */
+.head-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.head-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.head-logo img {
+    max-height: 60px;
+    display: block;
+}
+
+.head-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.head-nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.head-nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.head-nav-links a:hover {
+    color: #1F78D6;
+}
+
+.head-cta-btn {
+    background-color: #1F78D6;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.head-cta-btn:hover {
+    background-color: #155ba6;
+    transform: translateY(-2px);
+}
+
+.head-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.head-hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 850px) {
+    .head-hamburger {
+        display: flex;
+    }
+
+    .head-menu-wrapper {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .head-menu-wrapper.active {
+        right: 0;
+    }
+
+    .head-nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .head-hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .head-hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .head-hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

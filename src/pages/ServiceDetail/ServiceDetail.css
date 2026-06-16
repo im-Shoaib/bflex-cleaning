@@ -1,0 +1,415 @@
+/* BFLEX-CLEANING/src/pages/ServiceDetail/ServiceDetail.css */
+/* ---- Section 1: Service Detail ---- */
+.service-detail-page .sec1-section {
+    padding: 40px 20px 80px 20px;
+    background-color: #f7f8f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-detail-page .sec1-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.service-detail-page .sec1-header {
+    margin-bottom: 40px;
+}
+
+.service-detail-page .sec1-breadcrumb {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 24px;
+}
+
+.service-detail-page .sec1-breadcrumb a {
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service-detail-page .sec1-breadcrumb a:hover {
+    color: #1F78D6;
+}
+
+.service-detail-page .sec1-breadcrumb span {
+    color: #111111;
+    font-weight: 500;
+}
+
+.service-detail-page .sec1-subtitle {
+    color: #3C9BFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.service-detail-page .sec1-title {
+    color: #111111;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-detail-page .sec1-main-content {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 40px;
+}
+
+.service-detail-page .sec1-image-wrapper {
+    flex: 0 0 45%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-detail-page .sec1-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.service-detail-page .sec1-text-card {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.service-detail-page .sec1-card-heading {
+    font-size: 32px;
+    color: #111111;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.service-detail-page .sec1-card-paragraph {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.service-detail-page .sec1-btn {
+    background-color: #1F78D6;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 32px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.service-detail-page .sec1-btn:hover {
+    background-color: #155ba6;
+    transform: translateY(-2px);
+}
+
+.service-detail-page .sec1-highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-detail-page .sec1-highlight-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+}
+
+.service-detail-page .sec1-highlight-header {
+    background-color: #1F78D6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 16px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-detail-page .sec1-highlight-body {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+@media (max-width: 992px) {
+    .service-detail-page .sec1-main-content {
+        flex-direction: column;
+    }
+    .service-detail-page .sec1-image-wrapper {
+        max-height: 400px;
+    }
+    .service-detail-page .sec1-text-card {
+        padding: 40px;
+    }
+    .service-detail-page .sec1-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-detail-page .sec1-section {
+        padding: 30px 20px 60px 20px;
+    }
+    .service-detail-page .sec1-title {
+        font-size: 28px;
+    }
+    .service-detail-page .sec1-text-card {
+        padding: 30px 20px;
+    }
+    .service-detail-page .sec1-card-heading {
+        font-size: 24px;
+    }
+    .service-detail-page .sec1-card-paragraph {
+        font-size: 15px;
+    }
+    .service-detail-page .sec1-highlights-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Section 2: Certificates & CTA ---- */
+.service-detail-page .sec2-section {
+    padding: 80px 20px;
+    background-color: #f7f8f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-detail-page .sec2-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.service-detail-page .sec2-certs-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 40px;
+}
+
+.service-detail-page .sec2-certs-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.service-detail-page .sec2-certs-logos {
+    display: flex;
+    gap: 16px;
+    flex: 0 0 auto;
+}
+
+.service-detail-page .sec2-cert-box {
+    background-color: #ffffff;
+    border: 1px solid #A0C8FF;
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-detail-page .sec2-cert-img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+.service-detail-page .sec2-certs-text-block {
+    flex: 1;
+}
+
+.service-detail-page .sec2-certs-text {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.service-detail-page .sec2-certs-link {
+    font-size: 16px;
+    color: #3C9BFF;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.service-detail-page .sec2-certs-link:hover {
+    opacity: 0.7;
+}
+
+.service-detail-page .sec2-spacer {
+    height: 80px;
+}
+
+.service-detail-page .sec2-banner {
+    background-color: #3C9BFF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.service-detail-page .sec2-banner-content {
+    padding: 60px 40px 60px 60px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-detail-page .sec2-banner-title {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.service-detail-page .sec2-banner-text {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.service-detail-page .sec2-banner-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.service-detail-page .sec2-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.service-detail-page .sec2-btn-primary {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.service-detail-page .sec2-btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.service-detail-page .sec2-btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.service-detail-page .sec2-btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.service-detail-page .sec2-banner-image-wrapper {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 40px;
+}
+
+.service-detail-page .sec2-banner-image {
+    max-height: 380px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    .service-detail-page .sec2-certs-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-detail-page .sec2-certs-logos {
+        justify-content: center;
+    }
+    .service-detail-page .sec2-banner-content {
+        padding: 50px 40px;
+    }
+    .service-detail-page .sec2-banner-title {
+        font-size: 40px;
+    }
+    .service-detail-page .sec2-banner-image-wrapper {
+        flex: 0 0 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-detail-page .sec2-section {
+        padding: 60px 20px;
+    }
+    .service-detail-page .sec2-spacer {
+        height: 60px;
+    }
+    .service-detail-page .sec2-certs-title {
+        font-size: 28px;
+    }
+    .service-detail-page .sec2-certs-logos {
+        flex-direction: column;
+        width: 100%;
+    }
+    .service-detail-page .sec2-cert-box {
+        width: 100%;
+    }
+    .service-detail-page .sec2-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-detail-page .sec2-banner-content {
+        padding: 40px 30px 20px 30px;
+        align-items: center;
+    }
+    .service-detail-page .sec2-banner-title {
+        font-size: 36px;
+    }
+    .service-detail-page .sec2-banner-text {
+        font-size: 16px;
+    }
+    .service-detail-page .sec2-banner-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+    .service-detail-page .sec2-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    .service-detail-page .sec2-banner-image-wrapper {
+        padding-top: 20px;
+    }
+    .service-detail-page .sec2-banner-image {
+        max-height: 280px;
+    }
+}

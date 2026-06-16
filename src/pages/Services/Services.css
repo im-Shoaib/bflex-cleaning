@@ -1,0 +1,302 @@
+/* BFLEX-CLEANING/src/pages/Services/Services.css */
+/* ---- Section 1: Services Grid ---- */
+.services-page .sec1-section {
+    padding: 60px 20px 80px 20px;
+    background-color: #f7f8f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-page .sec1-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.services-page .sec1-header-area {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.services-page .sec1-breadcrumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #666666;
+}
+
+.services-page .sec1-breadcrumb a {
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.services-page .sec1-breadcrumb a:hover {
+    color: #3C9BFF;
+}
+
+.services-page .sec1-breadcrumb span {
+    color: #111111;
+    font-weight: 500;
+}
+
+.services-page .sec1-titles {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.services-page .sec1-subtitle {
+    color: #3C9BFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.services-page .sec1-title {
+    color: #111111;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.services-page .sec1-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.services-page .sec1-card {
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 3 / 4.2;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-page .sec1-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.services-page .sec1-card-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+}
+
+.services-page .sec1-card:hover .sec1-card-bg {
+    transform: scale(1.08);
+}
+
+.services-page .sec1-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.85) 100%);
+    z-index: 1;
+}
+
+.services-page .sec1-card-title {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 2;
+    padding: 0 15px;
+}
+
+@media (max-width: 1024px) {
+    .services-page .sec1-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page .sec1-section {
+        padding: 40px 20px 60px 20px;
+    }
+    .services-page .sec1-header-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .services-page .sec1-breadcrumb {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .services-page .sec1-titles {
+        padding-top: 0;
+    }
+    .services-page .sec1-title {
+        font-size: 32px;
+    }
+    .services-page .sec1-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-page .sec1-title {
+        font-size: 28px;
+    }
+    .services-page .sec1-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .services-page .sec1-card {
+        aspect-ratio: 4 / 3;
+    }
+}
+
+/* ---- Section 2: CTA Banner ---- */
+.services-page .sec2-section {
+    padding: 60px 20px;
+    background-color: #f7f8f9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-page .sec2-container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.services-page .sec2-banner {
+    background-color: #3C9BFF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(60, 155, 255, 0.2);
+}
+
+.services-page .sec2-content {
+    padding: 60px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-page .sec2-title {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.services-page .sec2-text {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.services-page .sec2-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.services-page .sec2-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.services-page .sec2-btn-primary {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.services-page .sec2-btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.services-page .sec2-btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.services-page .sec2-btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.services-page .sec2-image-wrapper {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 40px;
+}
+
+.services-page .sec2-image {
+    max-height: 380px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 992px) {
+    .services-page .sec2-content {
+        padding: 50px 40px;
+    }
+    .services-page .sec2-title {
+        font-size: 40px;
+    }
+    .services-page .sec2-image-wrapper {
+        flex: 0 0 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page .sec2-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .services-page .sec2-content {
+        padding: 40px 30px 20px 30px;
+        align-items: center;
+    }
+    .services-page .sec2-title {
+        font-size: 36px;
+    }
+    .services-page .sec2-text {
+        font-size: 16px;
+    }
+    .services-page .sec2-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+    .services-page .sec2-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    .services-page .sec2-image-wrapper {
+        padding-top: 20px;
+    }
+    .services-page .sec2-image {
+        max-height: 280px;
+    }
+}
