@@ -115,7 +115,7 @@ function Home() {
                     <div className="sec3-grid">
                         <article className="sec3-card">
                             <div className="sec3-card-img-wrapper">
-                                <img src="/assets/card5.png" alt="Blog Image 1" className="sec3-card-img" />
+                                <img src="/assets/card5.png" alt="Blog post thumbnail" className="sec3-card-img" />
                             </div>
                             <div className="sec3-card-content">
                                 <span className="sec3-card-category">Duurzaamheid</span>
@@ -134,7 +134,7 @@ function Home() {
 
                         <article className="sec3-card">
                             <div className="sec3-card-img-wrapper">
-                                <img src="/assets/card5.png" alt="Blog Image 2" className="sec3-card-img" />
+                                <img src="/assets/card5.png" alt="Blog post thumbnail2" className="sec3-card-img" />
                             </div>
                             <div className="sec3-card-content">
                                 <span className="sec3-card-category">Duurzaamheid</span>
@@ -153,7 +153,7 @@ function Home() {
 
                         <article className="sec3-card">
                             <div className="sec3-card-img-wrapper">
-                                <img src="/assets/card5.png" alt="Blog Image 3" className="sec3-card-img" />
+                                <img src="/assets/card5.png" alt="Blog post thumbnail3" className="sec3-card-img" />
                             </div>
                             <div className="sec3-card-content">
                                 <span className="sec3-card-category">Duurzaamheid</span>
